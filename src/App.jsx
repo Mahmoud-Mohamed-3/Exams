@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="App">
       <Form onSubmit={handleSave}>
-        <Form.Item label="كشكول حصىة أكتوبر">
+        <Form.Item label="كشكول حصة أكتوبر">
           <InputNumber
             value={octClass}
             onChange={(value) => setOctClass(value)}
@@ -67,7 +67,7 @@ function App() {
             onChange={(value) => setOctAttended(value)}
           />
         </Form.Item>
-        <Form.Item label="كشكول حصىة نوفمبر">
+        <Form.Item label="كشكول حصة نوفمبر">
           <InputNumber
             value={novClass}
             onChange={(value) => setNovClass(value)}
@@ -85,7 +85,7 @@ function App() {
             onChange={(value) => setNovAttended(value)}
           />
         </Form.Item>
-        <Form.Item label="كشكول حصىة ديسمبر">
+        <Form.Item label="كشكول حصة ديسمبر">
           <InputNumber
             value={decClass}
             onChange={(value) => setDecClass(value)}
@@ -109,15 +109,15 @@ function App() {
         </Form.Item>
 <Form.Item label={"اختبار 1"}>
           <InputNumber
-            value={decAttended}
-            onChange={(value) => setDecAttended(value)}
+            value={exam1}
+            onChange={(value) => setExam1(value)}
           />
 
 </Form.Item>
 <Form.Item label={"اختبار 2"}>
           <InputNumber
-            value={decAttended}
-            onChange={(value) => setDecAttended(value)}
+            value={exam2}
+            onChange={(value) => setExam2(value)}
           />
 </Form.Item>
         <Form.Item>
