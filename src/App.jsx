@@ -16,7 +16,9 @@ function App() {
   const [avAssessment, setAvAssessment] = useState();
   const [average, setAverage] = useState();
   const [exam1, setExam1] = useState();
+  const [exam1Average, setExam1Average] = useState();
   const [exam2, setExam2] = useState();
+  const [exam2Average, setExam2Average] = useState();
 
 
   const handleSave = (e) => {
@@ -32,8 +34,6 @@ function App() {
     setDecAttended()
     setExam1()
     setExam2()
-
-
     const calculatedAverage = ((octClass + novClass + decClass) / 3) * 0.6;
     const AssAvverage = ((octAssessment + novAssessment + decAssessment) / 3) * 0.6;
    const  AtteAverage= ((octAttended + novAttended + decAttended) / 3) * 0.6;
@@ -42,8 +42,8 @@ function App() {
     setAvAttended(AtteAverage);
     setAvAssessment(AssAvverage);
     setAverage(calculatedAverage);
-    setExam1(exam1Average);
-    setExam2(exam2Average);
+    setExam1Average(exam1Average);
+    setExam2Average(exam2Average);
   };
 
   return (
@@ -131,8 +131,8 @@ function App() {
         <br/>
         <strong>معدل التقييمات :</strong> {avAssessment?.toFixed(2)}<br/>
         <strong>معدل الحضور :</strong> {avAttended?.toFixed(2)}<br/>
-        <strong>معدل الاختبار الاول :</strong> {exam1?.toFixed(2)}<br/>
-        <strong>معدل الاختبار الثاني :</strong> {exam2?.toFixed(2)}<br/>
+        <strong>معدل الاختبار الاول :</strong> {exam1Average?.toFixed(2)}<br/>
+        <strong>معدل الاختبار الثاني :</strong> {exam2Average?.toFixed(2)}<br/>
       </div>
     </div>
   );
